@@ -16,3 +16,19 @@ const Component = () => {
 6. In order to follow along with the video use my backend (url below)
 
    [strapi backend]:https://github.com/john-smilga/strapi-gatsby-porfolio-2020-api
+
+7. Make sure such content-types exist in your Strapi application. Or replace/delete them in gatsby-config.js
+
+```javascript
+{
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        queryLimit: 1000, // Default to 100
+        // contentTypes: [`jobs`, `projects`, `blogs`, ],
+        //singleTypes:[`about` ]
+        contentTypes: [`jobs`, `projects`, `blogs`],
+        singleTypes: [`about`],
+      },
+    },
+```
