@@ -1,3 +1,10 @@
+# COMPLETE PROJECT SETUP
+
+In order to use complete project you will need:
+
+1. Strapi Instance with all Contet-Types and at least single instance of data (for each content-type). Check gatsby-config
+2. Permissions for all content-type's
+
 ## Setup Notes
 
 1. All components ready to go (including imports)
